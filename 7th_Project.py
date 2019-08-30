@@ -14,7 +14,7 @@ word_list = ['ADULT', 'AEROPLANE', 'AIR', 'AIRCRAFT', 'CARRIER', 'AIRFORCE', 'AI
              'SWIMMING', 'POOL', 'SWORD', 'TABLE', 'TAPESTRY', 'TEETH', 'TELESCOPE', 'TELEVISION', 'TENNIS', 'RACQUET', 'THERMOMETER', 'TIGER', 'TOILET', 'TONGUE', 'TORCH', 'TORPEDO', 'TRAIN',
              'TREADMILL', 'TRIANGLE', 'TUNNEL', 'TYPEWRITER', 'UMBRELLA', 'VACUUM', 'VAMPIRE', 'VIDEOTAPE', 'VULTURE', 'WATER', 'WEAPON', 'WEB', 'WHEELCHAIR', 'WINDOW', 'WOMAN', 'WORM']
 word = list(word_list[random.randrange(len(word_list) - 1)])
-out_word = word
+out_word = word.copy()
 out = ""
 for num in range(len(word)):
     out +=  " _"
